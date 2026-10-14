@@ -268,10 +268,10 @@ section{
     background-color: #0f1319;
 }
 .skills-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px; 
     margin-top: 30px;
 }
 .skill-card {
@@ -355,7 +355,7 @@ section{
 
 @media (max-width: 768px) {
     header {
-        padding: 15px 20px;
+        padding: 18px 25px; 
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -409,7 +409,7 @@ section{
 
 @media (max-width: 480px) {
     header {
-        padding: 12px 10px;
+        padding: 16px 15px; 
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -455,12 +455,14 @@ section{
         margin: 10px 0;
     }
 
+    
     .skills-grid {
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
     }
 
     .skill-card {
-        width: 48%;
-        padding: 12px 8px;
+        width: 100%; 
+        padding: 10px 4px;
     }
 }
